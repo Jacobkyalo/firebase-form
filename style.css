@@ -27,6 +27,18 @@ body{
   border: 0;
   outline: 0;
 }
+.form button{
+  background: rgb(141, 110, 170);
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 40px;
+}
 .login-form h3{
   background-color: rgb(141, 110, 170);
   padding: 20px;
@@ -38,6 +50,11 @@ body{
 }
 .form textarea{
   grid-column:1/2 ;
+}
+.error{
+  background-color: rgb(192, 33, 33);
+  color: #fff;
+  padding: 10px;
 }
 @media (min-width:600px){
   .form{
