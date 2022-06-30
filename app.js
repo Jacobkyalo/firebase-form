@@ -21,12 +21,11 @@ function handleSubmitForm(e) {
     Message: message,
   };
 
-  fetch("link", {
+  fetch("https://form-d894f-default-rtdb.firebaseio.com/logins.json", {
     method: "POST",
     headers: {
-      "Content-type": "application/json",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(formData),
   });
-  console.log(formData);
 }
