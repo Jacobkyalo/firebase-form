@@ -1,33 +1,34 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+body {
   background-color: rgb(224, 255, 255);
 }
-.container{
+.container {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
-.login-form{
+.login-form {
   padding: 30px;
   border-radius: 5px;
 }
-.form{
+.form {
   background: lightgrey;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.form input, .form textarea {
+.form input,
+.form textarea {
   padding: 10px;
   border: 0;
   outline: 0;
 }
-.form button{
+.form button {
   background: rgb(141, 110, 170);
   border: 0;
   outline: 0;
@@ -40,29 +41,30 @@ body{
   border-radius: 20px;
   margin-top: 40px;
 }
-.login-form h3{
+.login-form h3 {
   background-color: rgb(141, 110, 170);
   padding: 20px;
   text-align: center;
   font-size: 1.5rem;
 }
-.login-form p{
+.login-form p {
   padding: 10px;
 }
-.form textarea{
-  grid-column:1/2 ;
+.form textarea {
+  grid-column: 1/2;
 }
-.error{
+.error {
   background-color: rgb(192, 33, 33);
   color: #fff;
   padding: 10px;
 }
-@media (min-width:600px){
-  .form{
+@media (min-width: 600px) {
+  .form {
     grid-template-columns: 2fr 2fr;
     padding: 30px;
   }
-  .form input, .form textarea {
+  .form input,
+  .form textarea {
     width: 100%;
     outline: 0;
   }
