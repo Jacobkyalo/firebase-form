@@ -21,6 +21,7 @@ function handleSubmitForm(e) {
     Message: message,
   };
 
+  //posting input object to firebase database
   fetch("https://form-d894f-default-rtdb.firebaseio.com/logins.json", {
     method: "POST",
     headers: {
