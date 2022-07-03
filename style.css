@@ -39,7 +39,7 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   border-radius: 20px;
-  margin-top: 40px;
+  margin: 0 0 10px 0;
 }
 .login-form h3 {
   background-color: rgb(141, 110, 170);
@@ -50,18 +50,30 @@ body {
 .login-form p {
   padding: 10px;
 }
+
 .form textarea {
   grid-column: 1/2;
 }
 .error {
-  background-color: rgb(192, 33, 33);
-  color: #fff;
-  padding: 10px;
+  color: rgb(192, 33, 33);
+  padding: 0 20px;
+  font-weight: 800;
 }
 @media (min-width: 600px) {
   .form {
     grid-template-columns: 2fr 2fr;
     padding: 30px;
+  }
+  .form input,
+  .form textarea {
+    width: 100%;
+    outline: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    grid-template-columns: 1fr;
   }
   .form input,
   .form textarea {

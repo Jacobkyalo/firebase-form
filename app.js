@@ -29,4 +29,10 @@ function handleSubmitForm(e) {
     },
     body: JSON.stringify(formData),
   });
+
+  firstName.value = "";
+  lastName.value = "";
+  email.value = "";
+  password.value = "";
+  message.value = "";
 }
