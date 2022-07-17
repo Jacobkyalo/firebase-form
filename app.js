@@ -3,8 +3,8 @@ const form = document.getElementById("form");
 form.addEventListener("submit", handleSubmitForm);
 
 //handle form submit
-function handleSubmitForm(e) {
-  e.preventDefault();
+function handleSubmitForm(event) {
+  event.preventDefault();
 
   const firstName = document.getElementById("firstname").value;
   const lastName = document.getElementById("lastname").value;
@@ -30,6 +30,7 @@ function handleSubmitForm(e) {
     body: JSON.stringify(formData),
   });
 
+  //setting input areas to empty after form submission
   firstName.value = "";
   lastName.value = "";
   email.value = "";
