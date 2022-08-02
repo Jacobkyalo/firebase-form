@@ -40,6 +40,7 @@ body {
   letter-spacing: 1px;
   border-radius: 20px;
   margin: 0 0 10px 0;
+  cursor: pointer;
 }
 .login-form h3 {
   background-color: rgb(141, 110, 170);
